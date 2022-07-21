@@ -8,17 +8,13 @@ import json
 import os
 import psycopg2
 
-DATABASE_URL = os.environ['DATABASE_URL']
-conn = psycopg2.connect(DATABASE_URL, sslmode='require')
-conn
-
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST']) 
 def home_page():    
-    DATABASE_URL = os.environ['DATABASE_URL']
-    conn = psycopg2.connect(DATABASE_URL, sslmode='require')
-    conn
+#     DATABASE_URL = os.environ['DATABASE_URL']
+#     conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+#     conn
     return render_template('login.html')
 
 if __name__ == '__main__':
