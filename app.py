@@ -5,8 +5,8 @@ from flask_sqlalchemy import SQLAlchemy
 from flask import Flask, render_template, request, jsonify
 from datetime import datetime
 import json
-import os
-import psycopg2
+# import os
+# import psycopg2
 
 app = Flask(__name__)
 
